@@ -3,7 +3,7 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
-module = "listwix"
+module = "listwiz"
 author = "Nikoleta E. Glynatsi, Sebastian Berg"
 author-email = "glynatsi@evolbio.mpg.de"
 requires = [
