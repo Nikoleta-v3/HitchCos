@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "listwix"
+author = "Nikoleta E. Glynatsi, Sebastian Berg"
+author-email = "glynatsi@evolbio.mpg.de"
+requires = [
+    "pytest"
+]
+home-page = ""
+requires-python= ">=3.9"
+description-file = "README.md"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+
+[tool.flit.metadata.requires-extra]
+doc = ["sphinx==6.2.1", "sphinx-rtd-theme", "sphinx-togglebutton", "matplotlib", "sphinxcontrib.mermaid"]
