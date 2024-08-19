@@ -239,6 +239,7 @@ of `listwiz`. To do this, open a Pull Request. To do this, navigate to the
 repository on your Github account. You should see a :code:`Compare and Pull Request`
 button:
 
+    .. image:: /_static/contributing/tutorial/before_pr/main.pn
 
 
 Making further modifications
@@ -250,11 +251,11 @@ documentation.
 
 You can click on the corresponding :code:`details` button to see any of these:
 
-
+.. image:: /_static/contributing/tutorial/ci/main.png
 
 Your modification will also be reviewed:
 
-
+.. image:: /_static/contributing/tutorial/review/main.png
 
 To make any required changes, **modify the files**.
 

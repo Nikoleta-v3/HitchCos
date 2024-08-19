@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make a contribution to the documentation &mdash; listwiz 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How To" href="../how-to/index.html" />
+    <link rel="prev" title="Welcome to listwiz’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            listwiz
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Make a contribution to the documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#forking-the-repository">Forking the repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cloning-the-repository">Cloning the repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-branch">Creating a branch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modifying-the-documentation">Modifying the documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#checking-the-modification">Checking the modification</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#implementing-a-function">Implementing a function</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#documenting-your-function">Documenting your function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#testing-your-function">Testing your function</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#committing-the-change">Committing the change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pushing-the-change-to-github">Pushing the change to Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#opening-a-pull-request">Opening a Pull Request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-further-modifications">Making further modifications</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to/index.html">How To</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">listwiz</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Make a contribution to the documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/contributing/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="make-a-contribution-to-the-documentation">
+<h1>Make a contribution to the documentation<a class="headerlink" href="#make-a-contribution-to-the-documentation" title="Permalink to this heading"></a></h1>
+<p>In this tutorial we will learn how to make a contribution to <cite>listwiz</cite>.</p>
+<p>Open source projects are typically hosted on platforms like GitHub, GitLab, or
+others, with the source code managed using Git. In this tutorial, we will use
+GitHub as an example. To make a contribution, you need to have a GitHub account.
+You can create an account by navigating to GitHub: <a class="reference external" href="http://github.com">http://github.com</a>. If you are
+in education, you can apply for a specific education account here:
+<a class="reference external" href="https://education.github.com">https://education.github.com</a>.</p>
+<section id="forking-the-repository">
+<h2>Forking the repository<a class="headerlink" href="#forking-the-repository" title="Permalink to this heading"></a></h2>
+<p>Most projects have protected GitHub repositories, meaning you cannot make
+changes directly to the source code. Instead, you need to create a copy of the
+source code under your own GitHub account and then make changes to that copy.
+This process is called a <strong>fork</strong>. To do this, navigate to the GitHub repository
+of the project
+(<a class="reference external" href="https://github.com/Nikoleta-v3/a-hitchhikers-guide-to-contributing-to-open-source">https://github.com/Nikoleta-v3/a-hitchhikers-guide-to-contributing-to-open-source</a>)
+and click the <code class="code docutils literal notranslate"><span class="pre">Fork</span></code> button, following the instructions provided.</p>
+<img alt="../_images/forking.png" src="../_images/forking.png" />
+</section>
+<section id="cloning-the-repository">
+<h2>Cloning the repository<a class="headerlink" href="#cloning-the-repository" title="Permalink to this heading"></a></h2>
+<p>Once we have a fork of the repository on <strong>your</strong> Github account, create a copy
+of it to your computer. This is called cloning. Do this by clicking the
+<code class="code docutils literal notranslate"><span class="pre">Code</span></code> button and copying the address of the repository to your clipboard:</p>
+<img alt="../_images/cloning.png" src="../_images/cloning.png" />
+<p>Note that we want to copy the address of the repository using the <cite>SSH</cite>
+protocol. Now, open your command line tool and type <cite>git clone</cite>, then paste the
+address you just copied. The command should look like the following, where
+<cite>&lt;your-username&gt;</cite> is replaced with your GitHub username:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone httpsgit@github.com:&lt;your-username&gt;/a-hitchhikers-guide-to-contributing-to-open-source.git
+</pre></div>
+</div>
+<p>This will download the source code to your computer:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cloning</span> <span class="n">into</span> <span class="s1">&#39;a-hitchhikers-guide-to-contributing-to-open-source&#39;</span><span class="o">...</span>
+<span class="n">remote</span><span class="p">:</span> <span class="n">Enumerating</span> <span class="n">objects</span><span class="p">:</span> <span class="mi">117</span><span class="p">,</span> <span class="n">done</span><span class="o">.</span>
+<span class="n">remote</span><span class="p">:</span> <span class="n">Counting</span> <span class="n">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">117</span><span class="o">/</span><span class="mi">117</span><span class="p">),</span> <span class="n">done</span><span class="o">.</span>
+<span class="n">remote</span><span class="p">:</span> <span class="n">Compressing</span> <span class="n">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">94</span><span class="o">/</span><span class="mi">94</span><span class="p">),</span> <span class="n">done</span><span class="o">.</span>
+<span class="n">remote</span><span class="p">:</span> <span class="n">Total</span> <span class="mi">117</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">14</span><span class="p">),</span> <span class="n">reused</span> <span class="mi">105</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">9</span><span class="p">),</span> <span class="n">pack</span><span class="o">-</span><span class="n">reused</span> <span class="mi">0</span> <span class="p">(</span><span class="kn">from</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">Receiving</span> <span class="n">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">117</span><span class="o">/</span><span class="mi">117</span><span class="p">),</span> <span class="mf">3.63</span> <span class="n">MiB</span> <span class="o">|</span> <span class="mf">3.43</span> <span class="n">MiB</span><span class="o">/</span><span class="n">s</span><span class="p">,</span> <span class="n">done</span><span class="o">.</span>
+<span class="n">Resolving</span> <span class="n">deltas</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">14</span><span class="o">/</span><span class="mi">14</span><span class="p">),</span> <span class="n">done</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-a-branch">
+<h2>Creating a branch<a class="headerlink" href="#creating-a-branch" title="Permalink to this heading"></a></h2>
+<p>Before we start making changes to the source code, the first thing we will do is
+create a new branch. This is because we want to keep the changes we are about to
+make separate from the main source code. To do this, first change directory into
+the source code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd a-hitchhikers-guide-to-contributing-to-open-source
+</pre></div>
+</div>
+<p>Now, to create a new branch, type the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch the-name-of-the-branch
+</pre></div>
+</div>
+<p>Note that the name of the branch should be descriptive of the changes you are
+going to make. For example, if you are going to add a new function to the source
+code, you could name the branch <code class="code docutils literal notranslate"><span class="pre">implementing-new-function</span></code>.</p>
+<p>Now checkout to that branch:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout the-name-of-the-branch
+</pre></div>
+</div>
+</section>
+<section id="modifying-the-documentation">
+<h2>Modifying the documentation<a class="headerlink" href="#modifying-the-documentation" title="Permalink to this heading"></a></h2>
+<p>One set of changes you can make to the source code is to the documentation. The
+documentation is a crucial part of any open-source project. It helps users
+understand how to use the software and how to contribute to it.</p>
+<p>All the files for the documentation are in the <code class="code docutils literal notranslate"><span class="pre">docs</span></code> directory. The
+documentation is written in <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>. The
+documentation is built using <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a>.</p>
+<p>In order to modify the documentation, you need to change the files in the
+<code class="code docutils literal notranslate"><span class="pre">docs</span></code> directory. Open the project in your preferred editor. If you do not
+have a preferred editor <a class="reference external" href="https://code.visualstudio.com">Visual Studio Code</a> is
+recommended.</p>
+<p>Take a few minutes to familiarize yourself with the structure of the
+documentation. The main file for the documentation is <code class="code docutils literal notranslate"><span class="pre">index.rst</span></code> which is
+in the <code class="code docutils literal notranslate"><span class="pre">docs</span></code> directory. This file includes all the other files in the
+documentation. The documentation is split into different sections, each of which
+is in a separate folder in the <code class="code docutils literal notranslate"><span class="pre">docs</span></code> directory.</p>
+<section id="checking-the-modification">
+<h3>Checking the modification<a class="headerlink" href="#checking-the-modification" title="Permalink to this heading"></a></h3>
+<p>To build the documentation, the first thing you need to do is to download
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a>. You can do this via <cite>pip</cite>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python -m pip install sphinx
+</pre></div>
+</div>
+<p>To build the documentation navigate to the <code class="code docutils literal notranslate"><span class="pre">docs</span></code> directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd docs
+</pre></div>
+</div>
+<p>and run the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
+Running Sphinx v5.0.2
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 0 source files that are out of date
+updating environment: 0 added, 0 changed, 0 removed
+looking for now-outdated files... none found
+no targets are out of date.
+build succeeded.
+
+The HTML pages are in build/html.
+</pre></div>
+</div>
+<p>You can open <code class="code docutils literal notranslate"><span class="pre">_build/html/index.html</span></code> in a browser to see the
+documentation locally which should include the changes you made.</p>
+</section>
+</section>
+<section id="implementing-a-function">
+<h2>Implementing a function<a class="headerlink" href="#implementing-a-function" title="Permalink to this heading"></a></h2>
+<p>Navigate to the issues tab of the repository and find an issue that you would
+like to work on. Some of these issues are tagged as <cite>implement function</cite>. The issue
+will have a description of the function that needs to be implemented, and where
+the function code should be included. In your function you need to remember to
+include a docstring that describes what the function does. This is important for
+users of the software to understand how to use the function. The docstring should
+be in the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">arguments</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Description of the function.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    arguments : type</span>
+<span class="sd">        Description of the argument.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    type</span>
+<span class="sd">        Description of the return value.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># code for the function</span>
+</pre></div>
+</div>
+<section id="documenting-your-function">
+<h3>Documenting your function<a class="headerlink" href="#documenting-your-function" title="Permalink to this heading"></a></h3>
+<p>Once you have implemented the function, you need to add it to the documentation.
+To do this, create a new file in the <code class="code docutils literal notranslate"><span class="pre">docs/how-to</span></code> directory. The file
+should be named after the function you implemented. For example, if you implemented
+a function called <cite>new_function</cite>, the file should be named <code class="code docutils literal notranslate"><span class="pre">new_function.rst</span></code>.
+In there include a few line explaining the function and how to use it. For example
+the documentation of the function looks as follow:</p>
+<p>The open the file <code class="code docutils literal notranslate"><span class="pre">docs/how-to/index.rst</span></code>. This file includes all the
+functions that are implemented in the source code. Add a new section for your
+function in the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+    <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">1</span>
+
+    <span class="n">examplefuction</span><span class="o">.</span><span class="n">rst</span>
+    <span class="n">new_function</span><span class="o">.</span><span class="n">rst</span>
+</pre></div>
+</div>
+</section>
+<section id="testing-your-function">
+<h3>Testing your function<a class="headerlink" href="#testing-your-function" title="Permalink to this heading"></a></h3>
+<p>Before you commit your changes, you need to test your function. To do this, you
+need to run the test suite. The test suite is in the <code class="code docutils literal notranslate"><span class="pre">tests</span></code> directory. The
+test suite is written using <a class="reference external" href="https://docs.pytest.org/en/stable/">pytest</a>. To run
+the test suite, run the command from the root of the project folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pytest tests
+============================= test session starts ==============================
+platform linux -- Python 3.8.5, pytest-6.2.2, pluggy-0.13.1
+rootdir: /home/nikoleta/Documents/a-hitchhikers-guide-to-contributing-to-open-source
+collected 0 items
+
+============================== no tests ran in 0.01s ==============================
+</pre></div>
+</div>
+</section>
+</section>
+<section id="committing-the-change">
+<h2>Committing the change<a class="headerlink" href="#committing-the-change" title="Permalink to this heading"></a></h2>
+<p>Once you are done with your changes, you need to commit them. First, you need to
+<strong>stage</strong> the files you have changed. To do this, run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add &lt;name of the file tou want to commit&gt;
+</pre></div>
+</div>
+<p>Do this for all the files you have changed. Once you have staged all the files,
+you can commit them:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git commit
+
+$ git commit
+</pre></div>
+</div>
+<p>This will open a text editor where you can write your commit title and message.</p>
+</section>
+<section id="pushing-the-change-to-github">
+<h2>Pushing the change to Github<a class="headerlink" href="#pushing-the-change-to-github" title="Permalink to this heading"></a></h2>
+<p>Now that all that is done, you are going to send the changes back to your copy
+of the source code on Github:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push origin the-name-of-the-branch
+</pre></div>
+</div>
+</section>
+<section id="opening-a-pull-request">
+<h2>Opening a Pull Request<a class="headerlink" href="#opening-a-pull-request" title="Permalink to this heading"></a></h2>
+<p>You now have 2 copies of the modified source code of the <cite>listwiz</cite> project. One
+locally on your computer, the other under your Github account. So first you will
+push your locally modified source code to your Github account. To do this run the
+command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push origin the-name-of-the-branch
+</pre></div>
+</div>
+<p>Now we want to merge the changes from your Github account to the main source code
+of <cite>listwiz</cite>. To do this, open a Pull Request. To do this, navigate to the
+repository on your Github account. You should see a <code class="code docutils literal notranslate"><span class="pre">Compare</span> <span class="pre">and</span> <span class="pre">Pull</span> <span class="pre">Request</span></code>
+button:</p>
+<blockquote>
+<div><img alt="_static/contributing/tutorial/before_pr/main.pn" src="_static/contributing/tutorial/before_pr/main.pn" />
+</div></blockquote>
+</section>
+<section id="making-further-modifications">
+<h2>Making further modifications<a class="headerlink" href="#making-further-modifications" title="Permalink to this heading"></a></h2>
+<p>Once a Pull Request is opened, a number of automated checks will start. This
+will check the various software tests but also build a viewable version of the
+documentation.</p>
+<p>You can click on the corresponding <code class="code docutils literal notranslate"><span class="pre">details</span></code> button to see any of these:</p>
+<img alt="_static/contributing/tutorial/ci/main.png" src="_static/contributing/tutorial/ci/main.png" />
+<p>Your modification will also be reviewed:</p>
+<img alt="_static/contributing/tutorial/review/main.png" src="_static/contributing/tutorial/review/main.png" />
+<p>To make any required changes, <strong>modify the files</strong>.</p>
+<p>Then stage and commit the files:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add &lt;name of the file tou want to commit&gt;
+$ git commit
+</pre></div>
+</div>
+<p>This will open a text editor where you can write your commit title and message
+(similarly to before).</p>
+<p>Once this is done, push the code to Github which will automatically update the
+pull request:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push origin add-name-to-contributors-list
+</pre></div>
+</div>
+<p>This final process of making further modifications might repeat itself and
+eventually the Pull Request will be <strong>merged</strong> and your changes included in the
+main version of the source code.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to listwiz’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../how-to/index.html" class="btn btn-neutral float-right" title="How To" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Nikoleta E. Glynatsi, Sebastian Berg.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
