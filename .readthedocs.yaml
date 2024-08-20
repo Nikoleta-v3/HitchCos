@@ -14,10 +14,11 @@ build:
     # rust: "1.64"
     # golang: "1.19"
 
-install:
-    - requirements: docs/requirements.txt
-    - method: pip
-    
+python:
+  install:
+      - requirements: docs/requirements.txt
+      - method: pip
+
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
   configuration: docs/conf.py
