@@ -16,15 +16,15 @@ def test_mergesort():
 
 
 def test_mergesort_empty():
-    # Stub for a test with empty lists
+    # Stub for a test with empty lists, see issue #8
     pass
 
 
 def test_bubble_sort():
-    # Stub for basic bubble sort tests
+    # Stub for basic bubble sort tests, see issue #9
     pass
 
 
 def test_selection_sort():
-    # Stub for basic selection sort tets
+    # Stub for basic selection sort tests, see issue #10
     pass

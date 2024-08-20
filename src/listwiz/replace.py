@@ -1,5 +1,6 @@
 
-def replaced_element(l, element, replacement):
+def replaced_elements(l, mapping):
+    # See issue #12
     raise NotImplementedError
 
 
