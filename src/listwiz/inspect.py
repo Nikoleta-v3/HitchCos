@@ -33,5 +33,5 @@ def longest_decreasing_streak(l):
 
 
 def most_common_element(l):
-    # Find the mmost common element in the list
+    # Find the most common element in the list
     raise NotImplementedError
