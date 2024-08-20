@@ -1,0 +1,4 @@
+.. _examplefunction:
+
+Example Function
+===================
