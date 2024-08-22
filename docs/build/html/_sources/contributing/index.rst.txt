@@ -194,9 +194,7 @@ you can commit them::
 
     $ git commit
 
-    $ git commit
-
-This will open a text editor where you can write your commit title and message. 
+This will open a text editor where you can write your commit title and message.
 
 
 Pushing the change to Github
@@ -213,17 +211,17 @@ Opening a Pull Request
 
 You now have 2 copies of the modified source code of the `listwiz` project. One
 locally on your computer, the other under your Github account. So first you will
-push your locally modified source code to your Github account. To do this run the
-command::
+push your locally modified source code to your Github account. To do this run
+the command::
 
     $ git push origin the-name-of-the-branch
 
-Now we want to merge the changes from your Github account to the main source code
-of `listwiz`. To do this, open a Pull Request. To do this, navigate to the
-repository on your Github account. You should see a :code:`Compare and Pull Request`
-button:
+Now we want to merge the changes from your Github account to the main source
+code of `listwiz`. To do this, open a Pull Request. To do this, navigate to the
+repository on your Github account. You should see a :code:`Compare and Pull
+Request` button:
 
-
+.. image:: /_static/compare_button.png
 
 Making further modifications
 ----------------------------
@@ -232,15 +230,11 @@ Once a Pull Request is opened, a number of automated checks will start. This
 will check the various software tests but also build a viewable version of the
 documentation.
 
-You can click on the corresponding :code:`details` button to see any of these:
+You can click on the corresponding :code:`details` button to see any of these.
 
 
-
-Your modification will also be reviewed:
-
-
-
-To make any required changes, **modify the files**.
+No that your modification will also be reviewed. To make any required changes,
+**modify the files** in your computer as you did before.
 
 Then stage and commit the files::
 

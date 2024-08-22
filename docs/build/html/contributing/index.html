@@ -258,8 +258,6 @@ collected 0 items
 <p>Do this for all the files you have changed. Once you have staged all the files,
 you can commit them:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git commit
-
-$ git commit
 </pre></div>
 </div>
 <p>This will open a text editor where you can write your commit title and message.</p>
@@ -276,24 +274,25 @@ of the source code on Github:</p>
 <h2>Opening a Pull Request<a class="headerlink" href="#opening-a-pull-request" title="Permalink to this heading"></a></h2>
 <p>You now have 2 copies of the modified source code of the <cite>listwiz</cite> project. One
 locally on your computer, the other under your Github account. So first you will
-push your locally modified source code to your Github account. To do this run the
-command:</p>
+push your locally modified source code to your Github account. To do this run
+the command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push origin the-name-of-the-branch
 </pre></div>
 </div>
-<p>Now we want to merge the changes from your Github account to the main source code
-of <cite>listwiz</cite>. To do this, open a Pull Request. To do this, navigate to the
-repository on your Github account. You should see a <code class="code docutils literal notranslate"><span class="pre">Compare</span> <span class="pre">and</span> <span class="pre">Pull</span> <span class="pre">Request</span></code>
-button:</p>
+<p>Now we want to merge the changes from your Github account to the main source
+code of <cite>listwiz</cite>. To do this, open a Pull Request. To do this, navigate to the
+repository on your Github account. You should see a <code class="code docutils literal notranslate"><span class="pre">Compare</span> <span class="pre">and</span> <span class="pre">Pull</span>
+<span class="pre">Request</span></code> button:</p>
+<img alt="../_images/compare_button.png" src="../_images/compare_button.png" />
 </section>
 <section id="making-further-modifications">
 <h2>Making further modifications<a class="headerlink" href="#making-further-modifications" title="Permalink to this heading"></a></h2>
 <p>Once a Pull Request is opened, a number of automated checks will start. This
 will check the various software tests but also build a viewable version of the
 documentation.</p>
-<p>You can click on the corresponding <code class="code docutils literal notranslate"><span class="pre">details</span></code> button to see any of these:</p>
-<p>Your modification will also be reviewed:</p>
-<p>To make any required changes, <strong>modify the files</strong>.</p>
+<p>You can click on the corresponding <code class="code docutils literal notranslate"><span class="pre">details</span></code> button to see any of these.</p>
+<p>No that your modification will also be reviewed. To make any required changes,
+<strong>modify the files</strong> in your computer as you did before.</p>
 <p>Then stage and commit the files:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add &lt;name of the file tou want to commit&gt;
 $ git commit

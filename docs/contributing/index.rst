@@ -221,7 +221,7 @@ code of `listwiz`. To do this, open a Pull Request. To do this, navigate to the
 repository on your Github account. You should see a :code:`Compare and Pull
 Request` button:
 
-
+.. image:: /_static/compare_button.png
 
 Making further modifications
 ----------------------------
@@ -230,15 +230,11 @@ Once a Pull Request is opened, a number of automated checks will start. This
 will check the various software tests but also build a viewable version of the
 documentation.
 
-You can click on the corresponding :code:`details` button to see any of these:
+You can click on the corresponding :code:`details` button to see any of these.
 
 
-
-Your modification will also be reviewed:
-
-
-
-To make any required changes, **modify the files**.
+No that your modification will also be reviewed. To make any required changes,
+**modify the files** in your computer as you did before.
 
 Then stage and commit the files::
 
