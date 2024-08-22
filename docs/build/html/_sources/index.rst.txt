@@ -11,13 +11,18 @@ streaks, and identify the most frequently occurring elements::
     >>> sorted_list
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+Table of Contents
+=================
 
-The purpose of this package is to help you learn how to contribute to open
-source projects. For more information, check out the tutorial:
+.. To install the package your computer see the installation guideliens.
+
+.. The purpose of this package is to help you learn how to contribute to open
+.. source projects. For more information, check out the tutorial:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
+   installation/index.rst
    contributing/index.rst
 
 Indices and tables
