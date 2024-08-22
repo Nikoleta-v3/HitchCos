@@ -1,6 +1,6 @@
-import pytest
+import pytest  # noqa: F401
 
-from listwiz import inspect as lwi
+from listwiz import inspect as lwi  # noqa: F401
 
 
 @pytest.mark.xfail(reason="the function doesn't work yet")

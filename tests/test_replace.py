@@ -1,6 +1,6 @@
-import pytest
+import pytest  # noqa: F401
 
-from listwiz import replace as lwr
+from listwiz import replace as lwr  # noqa: F401
 
 
 def test_replace_elements():

@@ -1,4 +1,0 @@
-.. _examplefunction:
-
-Example Function
-===================

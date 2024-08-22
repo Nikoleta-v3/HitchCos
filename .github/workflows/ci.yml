@@ -24,3 +24,12 @@ jobs:
     - name: Test with pytest
       run: |
         pytest tests
+
+    - name: Install dependencies for style check
+      run: |
+          python -m pip install --upgrade pip
+          pip install ruff
+
+    - name: style check
+      run: |
+        ruff check .

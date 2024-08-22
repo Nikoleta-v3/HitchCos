@@ -21,7 +21,6 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="How To" href="../how-to/index.html" />
     <link rel="prev" title="Welcome to listwiz’s documentation!" href="../index.html" /> 
 </head>
 
@@ -64,7 +63,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#making-further-modifications">Making further modifications</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/index.html">How To</a></li>
 </ul>
 
         </div>
@@ -108,7 +106,8 @@ source code under your own GitHub account and then make changes to that copy.
 This process is called a <strong>fork</strong>. To do this, navigate to the GitHub repository
 of the project
 (<a class="reference external" href="https://github.com/Nikoleta-v3/a-hitchhikers-guide-to-contributing-to-open-source">https://github.com/Nikoleta-v3/a-hitchhikers-guide-to-contributing-to-open-source</a>)
-and click the <code class="code docutils literal notranslate"><span class="pre">Fork</span></code> button, following the instructions provided.</p>
+and click the <code class="code docutils literal notranslate"><span class="pre">Fork</span></code> button. Then choose your GitHub account as the
+<strong>onwer</strong> and click on <code class="code docutils literal notranslate"><span class="pre">Create</span> <span class="pre">fork</span></code>.</p>
 <img alt="../_images/forking.png" src="../_images/forking.png" />
 </section>
 <section id="cloning-the-repository">
@@ -205,12 +204,12 @@ documentation locally which should include the changes you made.</p>
 <section id="implementing-a-function">
 <h2>Implementing a function<a class="headerlink" href="#implementing-a-function" title="Permalink to this heading"></a></h2>
 <p>Navigate to the issues tab of the repository and find an issue that you would
-like to work on. Some of these issues are tagged as <cite>implement function</cite>. The issue
+like to work on. Some of these issues are tagged as <code class="code docutils literal notranslate"><span class="pre">enhancement</span></code>. The issue
 will have a description of the function that needs to be implemented, and where
-the function code should be included. In your function you need to remember to
-include a docstring that describes what the function does. This is important for
-users of the software to understand how to use the function. The docstring should
-be in the following format:</p>
+the function code should be included.</p>
+<p>In your function you need to remember to include a docstring that describes what
+the function does. This is important for users of the software to understand how
+to use the function. The docstring should be in the following format:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">arguments</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Description of the function.</span>
@@ -231,29 +230,13 @@ be in the following format:</p>
 </div>
 <section id="documenting-your-function">
 <h3>Documenting your function<a class="headerlink" href="#documenting-your-function" title="Permalink to this heading"></a></h3>
-<p>Once you have implemented the function, you need to add it to the documentation.
-To do this, create a new file in the <code class="code docutils literal notranslate"><span class="pre">docs/how-to</span></code> directory. The file
-should be named after the function you implemented. For example, if you implemented
-a function called <cite>new_function</cite>, the file should be named <code class="code docutils literal notranslate"><span class="pre">new_function.rst</span></code>.
-In there include a few line explaining the function and how to use it. For example
-the documentation of the function looks as follow:</p>
-<p>The open the file <code class="code docutils literal notranslate"><span class="pre">docs/how-to/index.rst</span></code>. This file includes all the
-functions that are implemented in the source code. Add a new section for your
-function in the following format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
-    <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">1</span>
-
-    <span class="n">examplefuction</span><span class="o">.</span><span class="n">rst</span>
-    <span class="n">new_function</span><span class="o">.</span><span class="n">rst</span>
-</pre></div>
-</div>
 </section>
 <section id="testing-your-function">
 <h3>Testing your function<a class="headerlink" href="#testing-your-function" title="Permalink to this heading"></a></h3>
 <p>Before you commit your changes, you need to test your function. To do this, you
-need to run the test suite. The test suite is in the <code class="code docutils literal notranslate"><span class="pre">tests</span></code> directory. The
-test suite is written using <a class="reference external" href="https://docs.pytest.org/en/stable/">pytest</a>. To run
-the test suite, run the command from the root of the project folder:</p>
+need to run the test suite. The test suite is in the <code class="code docutils literal notranslate"><span class="pre">tests</span></code> directory.
+The test suite is written using <a class="reference external" href="https://docs.pytest.org/en/stable/">pytest</a>.
+To run the test suite, run the command from the root of the project folder:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pytest tests
 ============================= test session starts ==============================
 platform linux -- Python 3.8.5, pytest-6.2.2, pluggy-0.13.1
@@ -275,8 +258,6 @@ collected 0 items
 <p>Do this for all the files you have changed. Once you have staged all the files,
 you can commit them:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git commit
-
-$ git commit
 </pre></div>
 </div>
 <p>This will open a text editor where you can write your commit title and message.</p>
@@ -293,29 +274,25 @@ of the source code on Github:</p>
 <h2>Opening a Pull Request<a class="headerlink" href="#opening-a-pull-request" title="Permalink to this heading"></a></h2>
 <p>You now have 2 copies of the modified source code of the <cite>listwiz</cite> project. One
 locally on your computer, the other under your Github account. So first you will
-push your locally modified source code to your Github account. To do this run the
-command:</p>
+push your locally modified source code to your Github account. To do this run
+the command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push origin the-name-of-the-branch
 </pre></div>
 </div>
-<p>Now we want to merge the changes from your Github account to the main source code
-of <cite>listwiz</cite>. To do this, open a Pull Request. To do this, navigate to the
-repository on your Github account. You should see a <code class="code docutils literal notranslate"><span class="pre">Compare</span> <span class="pre">and</span> <span class="pre">Pull</span> <span class="pre">Request</span></code>
-button:</p>
-<blockquote>
-<div><img alt="_static/contributing/tutorial/before_pr/main.pn" src="_static/contributing/tutorial/before_pr/main.pn" />
-</div></blockquote>
+<p>Now we want to merge the changes from your Github account to the main source
+code of <cite>listwiz</cite>. To do this, open a Pull Request. To do this, navigate to the
+repository on your Github account. You should see a <code class="code docutils literal notranslate"><span class="pre">Compare</span> <span class="pre">and</span> <span class="pre">Pull</span>
+<span class="pre">Request</span></code> button:</p>
+<img alt="../_images/compare_button.png" src="../_images/compare_button.png" />
 </section>
 <section id="making-further-modifications">
 <h2>Making further modifications<a class="headerlink" href="#making-further-modifications" title="Permalink to this heading"></a></h2>
 <p>Once a Pull Request is opened, a number of automated checks will start. This
 will check the various software tests but also build a viewable version of the
 documentation.</p>
-<p>You can click on the corresponding <code class="code docutils literal notranslate"><span class="pre">details</span></code> button to see any of these:</p>
-<img alt="_static/contributing/tutorial/ci/main.png" src="_static/contributing/tutorial/ci/main.png" />
-<p>Your modification will also be reviewed:</p>
-<img alt="_static/contributing/tutorial/review/main.png" src="_static/contributing/tutorial/review/main.png" />
-<p>To make any required changes, <strong>modify the files</strong>.</p>
+<p>You can click on the corresponding <code class="code docutils literal notranslate"><span class="pre">details</span></code> button to see any of these.</p>
+<p>No that your modification will also be reviewed. To make any required changes,
+<strong>modify the files</strong> in your computer as you did before.</p>
 <p>Then stage and commit the files:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add &lt;name of the file tou want to commit&gt;
 $ git commit
@@ -339,7 +316,6 @@ main version of the source code.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to listwiz’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../how-to/index.html" class="btn btn-neutral float-right" title="How To" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
