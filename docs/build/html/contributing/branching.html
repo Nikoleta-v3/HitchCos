@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Example Function &mdash; listwiz 0.0.1 documentation</title>
+  <title>2. Creating a branch &mdash; listwiz 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -21,7 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="How To" href="index.html" /> 
+    <link rel="next" title="3. Contributing to the documentation" href="contributing_docs.html" />
+    <link rel="prev" title="1. Forking and Cloning the repository" href="forking.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,9 +45,14 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Make a contribution to the documentation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">How To</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Example Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Make a Contribution to <cite>listwiz</cite></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="forking.html">1. Forking and Cloning the repository</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2. Creating a branch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing_docs.html">3. Contributing to the documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing_test.html">4. Contributing a test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing_function.html">5. Contributing a new function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pull_request.html">6. Pushing to Github and Opening a Pull Request</a></li>
 </ul>
 </li>
 </ul>
@@ -65,10 +71,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="index.html">How To</a></li>
-      <li class="breadcrumb-item active">Example Function</li>
+          <li class="breadcrumb-item"><a href="index.html">Make a Contribution to <cite>listwiz</cite></a></li>
+      <li class="breadcrumb-item active">2. Creating a branch</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/how-to/examplefuction.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/contributing/branching.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -76,15 +82,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="example-function">
-<span id="examplefunction"></span><h1>Example Function<a class="headerlink" href="#example-function" title="Permalink to this heading"></a></h1>
+  <section id="creating-a-branch">
+<span id="branching"></span><h1>2. Creating a branch<a class="headerlink" href="#creating-a-branch" title="Permalink to this heading"></a></h1>
+<p>Before we start making changes to the source code, the first thing we will do is
+create a new branch. This is because we want to keep the changes we are about to
+make separate from the main source code. To do this, first change directory into
+the source code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd a-hitchhikers-guide-to-contributing-to-open-source
+</pre></div>
+</div>
+<p>Now, to create a new branch, type the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch the-name-of-the-branch
+</pre></div>
+</div>
+<p>Note that the name of the branch should be descriptive of the changes you are
+going to make. For example, if you are going to add a new function to the source
+code, you could name the branch <code class="code docutils literal notranslate"><span class="pre">implementing-new-function</span></code>.</p>
+<p>Now checkout to that branch:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout the-name-of-the-branch
+</pre></div>
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="How To" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="forking.html" class="btn btn-neutral float-left" title="1. Forking and Cloning the repository" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contributing_docs.html" class="btn btn-neutral float-right" title="3. Contributing to the documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
