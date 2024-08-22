@@ -45,4 +45,3 @@ def bubble_sort(l):
 def selection_sort(l):
     # We should provide selection sort.
     raise NotImplementedError
-

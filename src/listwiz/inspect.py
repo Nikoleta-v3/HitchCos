@@ -12,8 +12,8 @@ def largest_element(l):
     value, index :
         A tuple of the largest value and its index.
     """
-    # Ooops, the imlementation is missing
-    return value, index
+    # return value, index
+    raise NotImplementedError
 
 
 def longest_increasing_streak(l):
