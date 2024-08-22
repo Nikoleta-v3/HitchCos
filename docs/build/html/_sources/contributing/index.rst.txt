@@ -20,7 +20,8 @@ source code under your own GitHub account and then make changes to that copy.
 This process is called a **fork**. To do this, navigate to the GitHub repository
 of the project
 (https://github.com/Nikoleta-v3/a-hitchhikers-guide-to-contributing-to-open-source)
-and click the :code:`Fork` button, following the instructions provided.
+and click the :code:`Fork` button. Then choose your GitHub account as the
+**onwer** and click on :code:`Create fork`.
 
 
 .. image:: /_static/forking.png
@@ -133,12 +134,13 @@ Implementing a function
 ------------------------
 
 Navigate to the issues tab of the repository and find an issue that you would
-like to work on. Some of these issues are tagged as `implement function`. The issue
+like to work on. Some of these issues are tagged as :code:`enhancement`. The issue
 will have a description of the function that needs to be implemented, and where
-the function code should be included. In your function you need to remember to
-include a docstring that describes what the function does. This is important for
-users of the software to understand how to use the function. The docstring should
-be in the following format::
+the function code should be included.
+
+In your function you need to remember to include a docstring that describes what
+the function does. This is important for users of the software to understand how
+to use the function. The docstring should be in the following format::
 
     def function_name(arguments):
         """
@@ -159,34 +161,16 @@ be in the following format::
 
 
 Documenting your function
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Once you have implemented the function, you need to add it to the documentation.
-To do this, create a new file in the :code:`docs/how-to` directory. The file
-should be named after the function you implemented. For example, if you implemented
-a function called `new_function`, the file should be named :code:`new_function.rst`.
-In there include a few line explaining the function and how to use it. For example
-the documentation of the function looks as follow::
-
-
-The open the file :code:`docs/how-to/index.rst`. This file includes all the
-functions that are implemented in the source code. Add a new section for your
-function in the following format::
-
-    .. toctree::
-        :maxdepth: 1
-
-        examplefuction.rst
-        new_function.rst
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 Testing your function
 ^^^^^^^^^^^^^^^^^^^^^
 
 Before you commit your changes, you need to test your function. To do this, you
-need to run the test suite. The test suite is in the :code:`tests` directory. The
-test suite is written using `pytest <https://docs.pytest.org/en/stable/>`_. To run
-the test suite, run the command from the root of the project folder::
+need to run the test suite. The test suite is in the :code:`tests` directory.
+The test suite is written using `pytest <https://docs.pytest.org/en/stable/>`_.
+To run the test suite, run the command from the root of the project folder::
 
     $ pytest tests
     ============================= test session starts ==============================
@@ -239,7 +223,6 @@ of `listwiz`. To do this, open a Pull Request. To do this, navigate to the
 repository on your Github account. You should see a :code:`Compare and Pull Request`
 button:
 
-    .. image:: /_static/contributing/tutorial/before_pr/main.pn
 
 
 Making further modifications
@@ -251,11 +234,11 @@ documentation.
 
 You can click on the corresponding :code:`details` button to see any of these:
 
-.. image:: /_static/contributing/tutorial/ci/main.png
+
 
 Your modification will also be reviewed:
 
-.. image:: /_static/contributing/tutorial/review/main.png
+
 
 To make any required changes, **modify the files**.
 

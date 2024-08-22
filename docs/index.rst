@@ -5,21 +5,20 @@ In this documentation you will find information about the `listwiz` project.
 `listwiz` allows you to handle lists: sort them, find the longest increasing
 streaks, and identify the most frequently occurring elements::
 
-    >>> import listwiz
-    >>> # Example with the implemented function.
+    >>> import listwiz as lwz
+    >>> unsorted_list = [2, 4, 1, 3, 5, 10, 7, 8, 9, 6]
+    >>> sorted_list = lwz.sorting.merge_sort(unsorted_list)
+    >>> sorted_list
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 The purpose of this package is to help you learn how to contribute to open
-source projects. The documentation has two main parts. These are the guidelines
-to contributing and a set of examples of the `listwiz` functions:
-
+source projects. For more information, check out the tutorial:
 
 .. toctree::
    :maxdepth: 1
 
    contributing/index.rst
-   how-to/index.rst
-
 
 Indices and tables
 ==================

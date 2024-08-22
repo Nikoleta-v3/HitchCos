@@ -1,0 +1,37 @@
+listwiz package
+===============
+
+Submodules
+----------
+
+listwiz.inspect module
+----------------------
+
+.. automodule:: listwiz.inspect
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+listwiz.replace module
+----------------------
+
+.. automodule:: listwiz.replace
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+listwiz.sorting module
+----------------------
+
+.. automodule:: listwiz.sorting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: listwiz
+   :members:
+   :undoc-members:
+   :show-inheritance:
