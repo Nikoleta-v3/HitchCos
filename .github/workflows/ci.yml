@@ -24,3 +24,12 @@ jobs:
     - name: Test with pytest
       run: |
         pytest tests
+
+    - name: Install dependencies for style check
+      run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+
+    - name: style check
+      run: |
+        flake8 src tests
