@@ -9,27 +9,31 @@ This repository contains the files necessary for a mock Python package called
 
 Any Python project has its own repository and slightly different style, but many
 things remain the same across projects. This project follows the recommended
-structure. Below, you can see several files and folders along with their
-purposes:
+structure. Below, you can see the various files and folders of the project along
+with their purposes:
 
 - `.github/workflows`: This directory contains files for running Continuous
   Integration (CI).
 - `docs`: Contains all necessary files for the online documentation of the
   package. This package is built using Sphinx, and you can see the online
   documentation here:
-- `src`: The folder with the source code of the package. Note that the
-  convention is to name this folder `src/<name_of_package>`. In this case, it's
-  `src/listwiz`. Inside, you will find several Python files and an `__init__.py`
-  file at the root.
+  [https://a-hitchhikers-guide-to-contributing-to-open-source.readthedocs.io/en/latest/](https://a-hitchhikers-guide-to-contributing-to-open-source.readthedocs.io/en/latest/).
+- `src`: The folder with the source code of the package. The convention is to
+  name this folder `src/<name_of_package>`. In this case, it's `src/listwiz`.
 - `tests`: This folder contains all the tests for the source code. We usually
   aim for each file in `src` to have an associated test file in the `tests`
   folder.
-- `.gitignore`: This file lists all the files we want Git to ignore. Our Python
-  package generates a lot of auxiliary files, and examples of these are listed
-  here.
-- `README.md`: A file that allows us to deploy the online documentation.
-- `setup.py`: The file that is run when we install the package.
-- `LICENSE`: The file that contains the license information.
-- `CONTRIBUTING.rst`: The file with the contributing guidelines.
-
-Installation notes.
+- `.gitignore`: This file lists all the files we want Git to ignore. For
+  example, our Python package generates many auxiliary files, which are listed
+  here because we want to ignore them and not push them to our online
+  repository.
+- `.readthedocs.yaml`: A file that allows us to deploy the online documentation.
+- `CODE_OF_CONDUCT`: The file that outlines the expected behavior for
+  contributors/attendees.
+- `LICENSE`: The file that contains the license information. Licenses are not
+  restrictive, even though some people seem to think so. A license lets us know
+  and informs users when it's okay to use a package and who has the original
+  rights.
+- `pyproject.toml`: The file that is run when we install the package.
+- `README.md`: The file that provides an overview of the project and
+  instructions for getting started.
