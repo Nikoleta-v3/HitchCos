@@ -51,7 +51,8 @@
 <li class="toctree-l2"><a class="reference internal" href="branching.html">2. Creating a branch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contributing_docs.html">3. Contributing to the documentation</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">4. Contributing a test</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#testing-your-function">Testing your function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-the-package-in-development-mode">Install the package in development mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-test-suite">Running the test suite</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#committing-the-change">Committing the change</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#checklist">Checklist</a></li>
 </ul>
@@ -90,22 +91,24 @@
   <section id="contributing-a-test">
 <span id="contributingtest"></span><h1>4. Contributing a test<a class="headerlink" href="#contributing-a-test" title="Permalink to this heading"></a></h1>
 <p>Navigate to the issues tab of the repository and find an issue that you would
-like to work on. Some of these issues are tagged as <code class="code docutils literal notranslate"><span class="pre">enhancement</span></code>. The
+like to work on. Some of these issues are tagged as <code class="code docutils literal notranslate"><span class="pre">Tests</span></code>. The
 issue will have a description of the function that needs to be implemented, and
 where the function code should be included.</p>
-<section id="testing-your-function">
-<h2>Testing your function<a class="headerlink" href="#testing-your-function" title="Permalink to this heading"></a></h2>
-<p>Before you commit your changes, you need to test your function. To do this, you
-need to run the test suite. The test suite is in the <code class="code docutils literal notranslate"><span class="pre">tests</span></code> directory.
-The test suite is written using <a class="reference external" href="https://docs.pytest.org/en/stable/">pytest</a>.
-To run the test suite, run the command from the root of the project folder:</p>
+<section id="install-the-package-in-development-mode">
+<h2>Install the package in development mode<a class="headerlink" href="#install-the-package-in-development-mode" title="Permalink to this heading"></a></h2>
+<p>To contribute any source code such a test, you need to install the package in
+development mode. To do this, run the following command from the root of the
+project folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -e .
+</pre></div>
+</div>
+</section>
+<section id="running-the-test-suite">
+<h2>Running the test suite<a class="headerlink" href="#running-the-test-suite" title="Permalink to this heading"></a></h2>
+<p>Once you have implemented your test you need to run the test suite to ensure
+that your test is working correctly. The test suite is written using <a class="reference external" href="https://docs.pytest.org/en/stable/">pytest</a>. To run it, , run the following command
+from the root of the project folder:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pytest tests
-============================= test session starts ==============================
-platform linux -- Python 3.8.5, pytest-6.2.2, pluggy-0.13.1
-rootdir: /home/nikoleta/Documents/a-hitchhikers-guide-to-contributing-to-open-source
-collected 0 items
-
-============================== no tests ran in 0.01s ==============================
 </pre></div>
 </div>
 </section>
@@ -126,12 +129,10 @@ you can commit them:</p>
 <section id="checklist">
 <h2>Checklist<a class="headerlink" href="#checklist" title="Permalink to this heading"></a></h2>
 <div class="line-block">
-<div class="line"><input type="checkbox"> Choose an issue labeled <code class="code docutils literal notranslate"><span class="pre">enhancement</span></code> from the issues section.</div>
-<div class="line"><input type="checkbox"> Familiarize yourself with the structure of the source code.</div>
-<div class="line"><input type="checkbox"> Implement the new function.</div>
-<div class="line"><input type="checkbox"> Include a docstring in the function.</div>
-<div class="line"><input type="checkbox"> Implement a test for your new function.</div>
-<div class="line"><input type="checkbox"> Test the function using the test suite.</div>
+<div class="line"><input type="checkbox"> Choose an issue labeled <code class="code docutils literal notranslate"><span class="pre">Tests</span></code> from the issues section.</div>
+<div class="line"><input type="checkbox"> Install the package in development mode.</div>
+<div class="line"><input type="checkbox"> Implement the test.</div>
+<div class="line"><input type="checkbox"> Run the test suite.</div>
 <div class="line"><input type="checkbox"> Add the changes to the staging area.</div>
 <div class="line"><input type="checkbox"> Commit the changes.</div>
 </div>

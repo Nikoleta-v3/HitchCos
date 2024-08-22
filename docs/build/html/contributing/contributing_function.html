@@ -52,6 +52,8 @@
 <li class="toctree-l2"><a class="reference internal" href="contributing_docs.html">3. Contributing to the documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contributing_test.html">4. Contributing a test</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">5. Contributing a new function</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-the-package-in-development-mode">Install the package in development mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implementing-your-function">Implementing your function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#documenting-your-function">Documenting your function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#testing-your-function">Testing your function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#committing-the-change">Committing the change</a></li>
@@ -94,6 +96,17 @@
 like to work on. Some of these issues are tagged as <code class="code docutils literal notranslate"><span class="pre">enhancement</span></code>. The
 issue will have a description of the function that needs to be implemented, and
 where the function code should be included.</p>
+<section id="install-the-package-in-development-mode">
+<h2>Install the package in development mode<a class="headerlink" href="#install-the-package-in-development-mode" title="Permalink to this heading"></a></h2>
+<p>To contribute any source code such a test, you need to install the package in
+development mode. To do this, run the following command from the root of the
+project folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -e .
+</pre></div>
+</div>
+</section>
+<section id="implementing-your-function">
+<h2>Implementing your function<a class="headerlink" href="#implementing-your-function" title="Permalink to this heading"></a></h2>
 <p>In your function you need to remember to include a docstring that describes what
 the function does. This is important for users of the software to understand how
 to use the function. The docstring should be in the following format:</p>
@@ -115,6 +128,7 @@ to use the function. The docstring should be in the following format:</p>
     <span class="c1"># code for the function</span>
 </pre></div>
 </div>
+</section>
 <section id="documenting-your-function">
 <h2>Documenting your function<a class="headerlink" href="#documenting-your-function" title="Permalink to this heading"></a></h2>
 </section>
@@ -153,6 +167,7 @@ you can commit them:</p>
 <div class="line-block">
 <div class="line"><input type="checkbox"> Choose an issue labeled <code class="code docutils literal notranslate"><span class="pre">enhancement</span></code> from the issues section.</div>
 <div class="line"><input type="checkbox"> Familiarize yourself with the structure of the source code.</div>
+<div class="line"><input type="checkbox"> Install the package in development mode.</div>
 <div class="line"><input type="checkbox"> Implement the new function.</div>
 <div class="line"><input type="checkbox"> Include a docstring in the function.</div>
 <div class="line"><input type="checkbox"> Implement a test for your new function.</div>

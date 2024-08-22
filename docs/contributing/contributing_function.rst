@@ -12,6 +12,20 @@ like to work on. Some of these issues are tagged as :code:`enhancement`. The
 issue will have a description of the function that needs to be implemented, and
 where the function code should be included.
 
+
+Install the package in development mode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To contribute any source code such a test, you need to install the package in
+development mode. To do this, run the following command from the root of the
+project folder::
+
+    $ pip install -e .
+
+
+Implementing your function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 In your function you need to remember to include a docstring that describes what
 the function does. This is important for users of the software to understand how
 to use the function. The docstring should be in the following format::
@@ -76,6 +90,7 @@ Checklist
 
 | |uncheck| Choose an issue labeled :code:`enhancement` from the issues section.
 | |uncheck| Familiarize yourself with the structure of the source code.
+| |uncheck| Install the package in development mode.
 | |uncheck| Implement the new function.
 | |uncheck| Include a docstring in the function.
 | |uncheck| Implement a test for your new function.

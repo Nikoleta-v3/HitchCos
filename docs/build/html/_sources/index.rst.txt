@@ -14,11 +14,6 @@ streaks, and identify the most frequently occurring elements::
 Table of Contents
 =================
 
-.. To install the package your computer see the installation guideliens.
-
-.. The purpose of this package is to help you learn how to contribute to open
-.. source projects. For more information, check out the tutorial:
-
 .. toctree::
    :maxdepth: 2
 
