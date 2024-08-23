@@ -1,3 +1,13 @@
+"""
+Listwiz replace
+---------------
+
+This module contains functions to replace some elements of a list.
+
+
+
+"""
+
 
 def replaced_elements(l, mapping):
     # See issue #12

@@ -1,3 +1,12 @@
+"""
+Listwiz sorting
+---------------
+
+This submodule contains implementations for different sorting methods.
+
+
+"""
+
 
 def merge_sort(l):
     """Use the merge sort algorithm to sort the list elements.

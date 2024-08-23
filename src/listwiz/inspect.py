@@ -1,3 +1,11 @@
+"""
+Listwiz inspect
+---------------
+
+This module contains some functions inspecting a list.
+
+"""
+
 
 def largest_element(l):
     """Find the largest element and its index

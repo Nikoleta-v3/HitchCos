@@ -19,6 +19,7 @@ Table of Contents
 
    installation/index.rst
    contributing/index.rst
+   api.rst
 
 Indices and tables
 ==================

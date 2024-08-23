@@ -13,7 +13,7 @@ def test_largest_element():
 
 
 @pytest.mark.xfail(reason="This function isn't working")
-def longest_increasing_streak():
+def test_longest_increasing_streak():
     l = [3, 1, 2, 3, 4, -1]
 
     res_streak, res_pos = lwi.longest_increasing_streak(l)
@@ -22,11 +22,11 @@ def longest_increasing_streak():
 
 
 @pytest.mark.skip(reason="Test is not implemented yet")
-def longest_decreasing_streak():
+def test_longest_decreasing_streak():
     raise AssertionError("This test is missing.")
 
 
 @pytest.mark.skip(reason="Test is not implemented yet")
-def most_common_element():
+def test_most_common_element():
     raise AssertionError("This test is missing.")
 

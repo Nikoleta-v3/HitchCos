@@ -14,7 +14,7 @@ where the function code should be included.
 
 
 Install the package in development mode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To contribute any source code such a test, you need to install the package in
 development mode. To do this, run the following command from the root of the
@@ -24,7 +24,7 @@ project folder::
 
 
 Implementing your function
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In your function you need to remember to include a docstring that describes what
 the function does. This is important for users of the software to understand how
