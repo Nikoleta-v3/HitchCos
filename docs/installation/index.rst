@@ -12,14 +12,14 @@ following command in your terminal after navigating to the directory where you
 want to place the project::
 
 
-    $ git clone https://github.com/<your-github-username>/a-hitchhikers-guide-to-contributing-to-open-source.git
+    $ git clone https://github.com/<your-github-username>/HitchCos.git
 
 
 Replace `<your-github-username>` with your actual GitHub username. Next,
 navigate to the project directory::
 
 
-    $ cd a-hitchhikers-guide-to-contributing-to-open-source
+    $ cd HitchCos
 
 
 Then, install the package by running the following command::

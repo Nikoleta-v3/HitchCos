@@ -8,7 +8,7 @@ create a new branch. This is because we want to keep the changes we are about to
 make separate from the main source code. To do this, first change directory into
 the source code::
 
-    $ cd a-hitchhikers-guide-to-contributing-to-open-source
+    $ cd HitchCos
 
 Now, to create a new branch, type the following::
 

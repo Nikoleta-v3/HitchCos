@@ -11,7 +11,7 @@ changes directly to the source code. Instead, you need to create a copy of the
 source code under your own GitHub account and then make changes to that copy.
 This process is called a **fork**. To do this, navigate to the GitHub repository
 of the project
-(https://github.com/Nikoleta-v3/a-hitchhikers-guide-to-contributing-to-open-source)
+(https://github.com/Nikoleta-v3/HitchCos)
 and click the :code:`Fork` button. Then choose your GitHub account as the
 **onwer** and click on :code:`Create fork`.
 
@@ -34,11 +34,11 @@ address you just copied. The command should look like the following, where
 `<your-username>` is replaced with your GitHub username::
 
 
-    $ git clone httpsgit@github.com:<your-username>/a-hitchhikers-guide-to-contributing-to-open-source.git
+    $ git clone git@github.com:Nikoleta-v3/HitchCos.git
 
 This will download the source code to your computer::
 
-    Cloning into 'a-hitchhikers-guide-to-contributing-to-open-source'...
+    Cloning into 'HitchCos'...
     remote: Enumerating objects: 117, done.
     remote: Counting objects: 100% (117/117), done.
     remote: Compressing objects: 100% (94/94), done.

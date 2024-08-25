@@ -30,7 +30,7 @@ with their purposes:
 - `docs`: Contains all necessary files for the online documentation of the
   package. This package is built using Sphinx, and you can see the online
   documentation here:
-  [https://a-hitchhikers-guide-to-contributing-to-open-source.readthedocs.io/en/latest/](https://a-hitchhikers-guide-to-contributing-to-open-source.readthedocs.io/en/latest/).
+  [https://hitchcos.readthedocs.io/en/latest/](https://hitchcos.readthedocs.io/en/latest/).
 
 - `src`: The folder with the source code of the package. The convention is to
   name this folder `src/<name_of_package>`. In this case, it's `src/listwiz`.
