@@ -34,7 +34,7 @@ address you just copied. The command should look like the following, where
 `<your-username>` is replaced with your GitHub username::
 
 
-    $ git clone git@github.com:Nikoleta-v3/HitchCos.git
+    $ git clone git@github.com:Nikoleta-v3/a-hitchhikers-guide-to-contributing-to-open-source.git
 
 This will download the source code to your computer::
 
