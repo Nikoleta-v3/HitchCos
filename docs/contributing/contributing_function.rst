@@ -51,6 +51,39 @@ to use the function. The docstring should be in the following format::
 Documenting your function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The online documentation has a section
+https://hitchcos.readthedocs.io/en/latest/api.html where all the functions are
+documented. This list is generated automatically. However, you can compile the
+documentation locally and check that your function has appeared.
+
+To build the documentation, the first thing you need to do is to download
+`Sphinx <https://www.sphinx-doc.org/en/master/>`_. You can do this via `pip`::
+
+    $ python -m pip install sphinx
+
+To build the documentation navigate to the :code:`docs` directory::
+    
+    $ cd docs
+
+and run the command::
+
+    $ make html
+    Running Sphinx v5.0.2
+    loading pickled environment... done
+    building [mo]: targets for 0 po files that are out of date
+    building [html]: targets for 0 source files that are out of date
+    updating environment: 0 added, 0 changed, 0 removed
+    looking for now-outdated files... none found
+    no targets are out of date.
+    build succeeded.
+
+    The HTML pages are in build/html.
+
+You can open :code:`_build/html/index.html` in a browser to see the
+documentation locally which should include the changes you made.
+
+
+
 
 Testing your function
 ^^^^^^^^^^^^^^^^^^^^^
