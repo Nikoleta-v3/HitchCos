@@ -48,3 +48,32 @@ def replace_sublist(l, sublist, replacement):
             i += 1
 
     return result
+
+
+def replaced_elements( l, replacements ):
+    """Function to replace elements of a list.
+
+    Parameters
+    ----------
+    l : list
+        List to change.
+    replacements : dict
+        Dictionary of replacements.
+    
+    Examples
+    --------
+    >>> from listwiz.replace import replace_elements
+    Replace all 2s with 20 and all 3 with 30.
+    >>> replace_elements([1, 2, 3], {2: 20, 3: 30})
+    [1, 20, 30]
+
+    """
+    out = []
+
+    for i in l:
+        if i in replacements:
+            out.append(replacements[i])
+        else:
+            out.append(i)
+    
+    return out
