@@ -40,6 +40,28 @@ def longest_decreasing_streak(l):
     raise NotImplementedError
 
 
-def most_common_element(l):
-    # Find the most common element in the list
-    raise NotImplementedError
+def most_common_element(ll):
+    """Find the most common element in a list.
+
+    Parameters
+    ----------
+    ll : list
+
+    Returns
+    -------
+    most common element
+    """
+    
+    if not isinstance(ll, list):
+        raise ValueError("Input must be a list")
+    
+    counting ={}
+    for i in ll:
+        if i in counting:
+            counting[i] += 1
+        else:
+            counting[i] = 1
+    
+    # Find the key with the maximum value
+    most_common = max(counting, key=counting.get)
+    return most_common  
