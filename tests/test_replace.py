@@ -22,5 +22,5 @@ def test_replace_sublist_overlap():
 
 
 def test_replace_sublist_empty():
-    # This is a stub for testing the bug with empty sublists.
-    pass
+    with pytest.raises(ValueError, match="The sublist cannot be empty. Please provide at least one element."):
+        lwr.replace_sublist([1, 2, 3], [], [5, 6])
