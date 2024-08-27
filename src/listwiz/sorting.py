@@ -21,7 +21,7 @@ def merge_sort(l):
     sorted_list
     """
     # If there is a single item, the list is already sorted, return.
-    if len(l) == 1:
+    if 0 <= len(l) <= 1:
         return l
 
     split = len(l) // 2
