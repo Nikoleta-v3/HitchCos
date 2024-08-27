@@ -37,6 +37,8 @@ def replace_sublist(l, sublist, replacement):
 
     """
     len_sublist = len(sublist)
+    if len_sublist == 0:
+        raise ValueError("The sublist cannot be empty. Please provide at least one element.")
     result = l[:]  # copy the input list
 
     i = 0
