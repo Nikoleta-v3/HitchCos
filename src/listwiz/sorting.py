@@ -47,8 +47,27 @@ def merge_sort(l):
 
 
 def bubble_sort(l):
-    # We should provide bubble sort as well!
-    raise NotImplementedError
+    """Bubble sort algorithm.
+
+    Parameters
+    ----------
+    l : list
+        The list to sort
+    
+    Returns
+    -------
+    sorted_list
+    """
+    n = len(l)
+    if n <= 1:
+        return l
+
+    for i in range(n):
+        for j in range(n-1-i):
+            if l[j] > l[j+1]:
+                l[j], l[j+1] = l[j+1], l[j]
+    
+    return l
 
 
 def selection_sort(l):
