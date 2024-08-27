@@ -59,7 +59,9 @@ def replace_elements( l, replacements ):
     Examples
     --------
     >>> from listwiz.replace import replace_elements
+
     Replace all 2s with 20 and all 3 with 30.
+
     >>> replace_elements([1, 2, 3], {2: 20, 3: 30})
     [1, 20, 30]
 
