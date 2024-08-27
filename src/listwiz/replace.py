@@ -9,10 +9,6 @@ This module contains functions to replace some elements of a list.
 """
 
 
-def replaced_elements(l, mapping):
-    # See issue #12
-    raise NotImplementedError
-
 
 def replace_sublist(l, sublist, replacement):
     """Naive function to replace a sublist with a replacement list.
@@ -50,7 +46,7 @@ def replace_sublist(l, sublist, replacement):
     return result
 
 
-def replaced_elements( l, replacements ):
+def replace_elements( l, replacements ):
     """Function to replace elements of a list.
 
     Parameters
