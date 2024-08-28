@@ -9,10 +9,6 @@ This module contains functions to replace some elements of a list.
 """
 
 
-def replaced_elements(l, mapping):
-    # See issue #12
-    raise NotImplementedError
-
 
 def replace_sublist(l, sublist, replacement):
     """Naive function to replace a sublist with a replacement list.
@@ -37,6 +33,8 @@ def replace_sublist(l, sublist, replacement):
 
     """
     len_sublist = len(sublist)
+    if len_sublist == 0:
+        raise ValueError("The sublist cannot be empty. Please provide at least one element.")
     result = l[:]  # copy the input list
 
     i = 0
@@ -48,3 +46,34 @@ def replace_sublist(l, sublist, replacement):
             i += 1
 
     return result
+
+
+def replace_elements( l, replacements ):
+    """Function to replace elements of a list.
+
+    Parameters
+    ----------
+    l : list
+        List to change.
+    replacements : dict
+        Dictionary of replacements.
+    
+    Examples
+    --------
+    >>> from listwiz.replace import replace_elements
+
+    Replace all 2s with 20 and all 3 with 30.
+
+    >>> replace_elements([1, 2, 3], {2: 20, 3: 30})
+    [1, 20, 30]
+
+    """
+    out = []
+
+    for i in l:
+        if i in replacements:
+            out.append(replacements[i])
+        else:
+            out.append(i)
+    
+    return out
