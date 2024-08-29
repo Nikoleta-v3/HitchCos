@@ -16,9 +16,10 @@ def test_mergesort():
 
 
 def test_mergesort_empty():
-    # Stub for a test with empty lists, see issue #8
-    pass
-
+    # Test with empty list:
+    l = []
+    res = lws.merge_sort(l)
+    assert res == []
 
 @pytest.mark.parametrize(
     "input_list, expected",
