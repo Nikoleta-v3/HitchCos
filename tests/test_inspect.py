@@ -26,7 +26,10 @@ def test_longest_decreasing_streak():
     raise AssertionError("This test is missing.")
 
 
-@pytest.mark.skip(reason="Test is not implemented yet")
+
 def test_most_common_element():
-    raise AssertionError("This test is missing.")
+    ll = [1, 2, 3, 4, 1, 1, 2, 3, 3, 3, 3, 3]
+    res = lwi.most_common_element(ll)
+    assert res == 3
+    
 

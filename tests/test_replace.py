@@ -4,9 +4,10 @@ from listwiz import replace as lwr  # noqa: F401
 
 
 def test_replace_elements():
-    # Stub to be replaced with actual tests when implementing the function,
-    # see issue #12.
-    pass
+    l1 = [1, 2, 3]
+    l2 = [1, 20, 30]
+    replacements = {2: 20, 3:30}
+    assert lwr.replace_elements(l1, replacements) == l2
 
 
 def test_replace_sublist_simple():
@@ -22,5 +23,5 @@ def test_replace_sublist_overlap():
 
 
 def test_replace_sublist_empty():
-    # This is a stub for testing the bug with empty sublists.
-    pass
+    with pytest.raises(ValueError, match="The sublist cannot be empty. Please provide at least one element."):
+        lwr.replace_sublist([1, 2, 3], [], [5, 6])
