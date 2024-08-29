@@ -32,10 +32,4 @@ def test_most_common_element():
     res = lwi.most_common_element(ll)
     assert res == 3
     
-    
-
-
-#@pytest.mark.skip(reason="Test is not implemented yet")
-#def test_most_common_element():
-#    raise AssertionError("This test is missing.")
 
