@@ -6,6 +6,8 @@ This module contains some functions inspecting a list.
 
 """
 
+from collections import Counter
+
 
 def largest_element(l):
     """Find the largest element and its index
@@ -55,13 +57,6 @@ def most_common_element(ll):
     if not isinstance(ll, list):
         raise ValueError("Input must be a list")
     
-    counting ={}
-    for i in ll:
-        if i in counting:
-            counting[i] += 1
-        else:
-            counting[i] = 1
+    c = Counter(ll)
+    return c.most_common(1)[0][0]
     
-    # Find the key with the maximum value
-    most_common = max(counting, key=counting.get)
-    return most_common  

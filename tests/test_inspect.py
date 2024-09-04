@@ -31,5 +31,3 @@ def test_most_common_element():
     ll = [1, 2, 3, 4, 1, 1, 2, 3, 3, 3, 3, 3]
     res = lwi.most_common_element(ll)
     assert res == 3
-    
-
